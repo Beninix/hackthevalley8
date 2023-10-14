@@ -1,5 +1,5 @@
 import pyautogui
+from pymsgbox import *
 screen = pyautogui.screenshot()
 pixel = screen.getpixel(pyautogui.position())
-
-print(pixel)
+alert(text=str(pixel), title ="Color", button="Ok")
