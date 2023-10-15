@@ -4,6 +4,7 @@ My project for Hack The Valley 8.
 Identifies the colour the cursor is pointed at when the configured key is pressed.
 Config in text file for non-programmers, can choose to use detailed or basic colour definitions as well as changing the activation key.
 By default, detailed colours are used as well as left alt for activation since it is less likely to interfere by typing.
+Coded in Python 3.12 (packages may not install properly in older versions).
 
 Uses pyautogui, pymsgbox and keyboard python libraries.
 For more info on non-alphanumeric keys or modifiers: https://github.com/boppreh/keyboard#keyboard.all_modifiers
