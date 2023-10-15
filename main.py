@@ -29,7 +29,6 @@ key = config[1].split("=")[1].strip()
 #Detailed Colours
 if(config[0].split("=")[1].strip()=="Yes"):
     colours = open("detailed colours.txt", "r").readlines()
-    print("YIPEEE")    
 #Basic Colours
 else:
     colours = open("basic colours.txt", "r").readlines()
