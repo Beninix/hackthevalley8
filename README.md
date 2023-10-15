@@ -6,6 +6,7 @@ Config in text file for non-programmers, can choose to use detailed or basic col
 By default, detailed colours are used as well as left alt for activation since it is less likely to interfere by typing.
 
 Uses pyautogui, pymsgbox and keyboard python libraries.
+For more info on non-alphanumeric keys or modifiers: https://github.com/boppreh/keyboard#keyboard.all_modifiers
 
 Took colour definitions from: https://www.rapidtables.com/web/color/RGB_Color.html (added orange to basic because it belongs there)
 
