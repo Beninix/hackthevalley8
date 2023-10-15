@@ -1,0 +1,2 @@
+detailedColour?=Yes
+activationKey?=left alt
