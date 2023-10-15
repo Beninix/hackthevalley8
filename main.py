@@ -1,6 +1,12 @@
 import pyautogui
 from pymsgbox import *
 
+def dist(point1, point2):
+    total = 0
+    for i in range(3):
+        total += (point1[i]-point2[i])**2
+    return total
+
 #Initialize
 names = []
 codes = []
@@ -14,6 +20,9 @@ for i in range(len(colours)):
     #Assign data to 2 parallel arrays
     names.append(temp[0])
     codes.append(temp[1].strip("()").split(","))
+    #Convert to int
+    for j in range(3):
+        codes[i][j]=int(codes[i][j])
 print(codes)
 #Color checking
 screen = pyautogui.screenshot()
@@ -21,7 +30,13 @@ pixel = screen.getpixel(pyautogui.position())
 
 #Match color code to color name
 closest = 0 #Index of closest
-closestDist = pixel
-
+closestDist = dist(pixel, codes[0])
 print(pixel)
+for i in range(len(codes)):
+    newDist = dist(pixel,codes[i])
+    if(newDist<closestDist):
+        closestDist = newDist
+        closest = i
+print(names[closest])
+print(closestDist)
 alert(text=str(pixel), title ="Colour", button="Ok")
