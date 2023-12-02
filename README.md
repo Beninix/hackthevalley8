@@ -11,3 +11,7 @@ For more info on non-alphanumeric keys or modifiers: https://github.com/boppreh/
 Took colour definitions from: https://www.rapidtables.com/web/color/RGB_Color.html (added orange to basic because it belongs there)
 
 I also cleaned up and formatted the copy/paste data using Sheets and Notepad++ operations.
+
+
+https://github.com/Beninix/hackthevalley8/assets/36938689/76f96bd4-7d5d-4070-a52f-fa5b06b3a3b9
+
